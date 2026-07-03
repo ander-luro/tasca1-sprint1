@@ -1,0 +1,98 @@
+/* Reset básico que propone claude */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+    max-width:1200px;
+    margin: 0 auto;
+    background-color: #000000;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;   
+}
+
+header{
+    display: flex;
+    gap: 10px;
+    background-color: #3f3a4d;
+    padding: 10px;
+}
+
+.logo{
+    background-color: #c65b5b;
+    padding: 5px;
+    flex: 1;
+}
+
+nav{
+    background-color: #c65b5b;
+    padding: 5px;
+    flex: 1;
+}
+
+.social{
+    background-color: #c65b5b;
+    padding: 5px;
+    flex: 1;
+    }
+
+.banner-wrapper{
+    background-color: orange;
+    padding: 10px;
+}
+
+.banner{
+    background-color: #ffdb38;
+    padding: 5px;
+}
+
+main{
+    display: flex;
+    gap: 10px;
+}
+
+.content{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    background-color: #3f3a4d;
+    padding: 10px;
+    flex: 3;
+}
+
+article{
+    background-color: #6098cd;
+    padding: 5px;
+    flex: 1 1 45%;
+}
+
+.navegacion{
+    background-color: #a8ddee;
+    padding: 5px;
+    flex: 1 1 100%;
+}
+
+aside{
+    background-color: #d84368;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: 1;
+}
+
+.publicidad{
+    background-color: #ffdb38;
+    padding: 5px;
+}
+
+footer{
+    background-color: #eddd77;
+    padding: 10px;
+}
+
+
