@@ -23,19 +23,19 @@ header{
 }
 
 .logo{
-    background-color: #c65b5b;
+    background-color: #d84368;
     padding: 5px;
     flex: 1;
 }
 
 nav{
-    background-color: #c65b5b;
+    background-color: #d84368;
     padding: 5px;
-    flex: 1;
+    flex: 3;
 }
 
 .social{
-    background-color: #c65b5b;
+    background-color: #d84368;
     padding: 5px;
     flex: 1;
     }
@@ -93,6 +93,29 @@ aside{
 footer{
     background-color: #eddd77;
     padding: 10px;
+}
+
+@media (max-width: 900px){
+    header{
+        flex-direction: column;
+    }
+    main{
+        flex-direction: column;
+    }
+    .content, aside {
+        flex: none;
+        /* en este caso no aplica porque no hay una altura definida en en main y simplemente se apilan */
+    }
+
+}
+
+@media (max-width: 400px){
+    article{
+        flex: 1 1 100%;
+        /* también podríamos poner en el .content un flex-direction column y align-items: stretch */
+    }
+
+
 }
 
 
