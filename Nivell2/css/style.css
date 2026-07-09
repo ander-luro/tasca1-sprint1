@@ -1,0 +1,173 @@
+/* Reset básico que me propone claude ??*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+    max-width:1200px;
+    margin: 0 auto;
+    /* background-color: #000000; */
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;   
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    background-color: #3f3a4d;
+    padding: 20px 20px 60px 20px;
+    background-image: url('../img/header.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.barra {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 70px;
+    gap: 5px;
+}
+
+.title-text{
+    text-align: center;
+    color: #ffa65dc5;
+    font-style: italic;
+    font-size: 30px;
+
+}
+
+.logo{
+    padding: 5px;
+    flex: 1;
+}
+
+.logo img {
+    max-width: 50px;
+    height: auto;
+}
+
+nav{
+    flex-wrap: wrap;
+    flex: 5;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a{
+    color: #808080;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 16px;
+}
+
+nav a:hover {
+    background-color:#808080;
+    color: white;
+}
+
+.social{
+    padding: 5px;
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    gap: 5px;
+}
+
+.social a{
+    color: #808080;
+}
+
+.social a:hover {
+    background-color:#808080;
+    color: white;
+}
+
+
+.banner-wrapper{
+    background-color: orange;
+    padding: 10px;
+}
+
+.banner{
+    background-color: #ffdb38;
+    padding: 5px;
+}
+
+main{
+    display: flex;
+    gap: 10px;
+}
+
+.content{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    background-color: #3f3a4d;
+    padding: 10px;
+    flex: 3;
+}
+
+article{
+    background-color: #6098cd;
+    padding: 5px;
+    flex: 1 1 45%;
+}
+
+.navegacion{
+    background-color: #a8ddee;
+    padding: 5px;
+    flex: 1 1 100%;
+}
+
+aside{
+    background-color: #d84368;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: 1;
+}
+
+.publicidad{
+    background-color: #ffdb38;
+    padding: 5px;
+}
+
+footer{
+    background-color: #eddd77;
+    padding: 10px;
+}
+
+@media (max-width: 900px){
+
+    main{
+        flex-direction: column;
+    }
+    .content, aside {
+        flex: none;
+        /* en este caso no aplica porque no hay una altura definida en en main y simplemente se apilan */
+    }
+
+}
+
+@media (max-width: 400px){
+    article{
+        flex: 1 1 100%;
+    }
+    .barra, nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+
+}
+
+
