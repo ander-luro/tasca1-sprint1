@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 .container {
     max-width:1200px;
     margin: 0 auto;
@@ -36,9 +40,9 @@ header{
 .title-text{
     text-align: center;
     color: #ffa65dc5;
-    font-style: italic;
     font-size: 30px;
-
+    font-family: Georgia, 'Times New Roman', serif;
+    font-style: italic;
 }
 
 .logo{
@@ -90,16 +94,6 @@ nav a:hover {
 }
 
 
-.banner-wrapper{
-    background-color: orange;
-    padding: 10px;
-}
-
-.banner{
-    background-color: #ffdb38;
-    padding: 5px;
-}
-
 main{
     display: flex;
     gap: 10px;
@@ -109,44 +103,102 @@ main{
     display: flex;
     gap: 10px;
     flex-wrap: wrap;
-    background-color: #3f3a4d;
+    background-color: #d0d0d0;
     padding: 10px;
     flex: 3;
 }
 
 article{
-    background-color: #6098cd;
-    padding: 5px;
+    background-color: #f5f1f1;
+    display: flex;
+    flex-direction: column;
     flex: 1 1 45%;
 }
 
+.article-image {
+    position: relative;
+}
+
+.article-image img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+.article-date {
+    position: absolute;
+    bottom: 12px;
+    left: 15px;
+    color: khaki;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.article-category {
+    background-color: lightcoral;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 12px 15px;
+}
+
+.article-text {
+    column-count: 2;
+    column-gap: 20px;
+    padding: 15px;
+}
+
+.article-text p {
+    flex: 1;
+    color: #535353;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.read-more {
+    display: block;
+    padding: 0 15px 15px 15px;
+    color: #808080;
+    text-decoration: none;
+    font-size: 14px;
+}
+
 .navegacion{
-    background-color: #a8ddee;
     padding: 5px;
     flex: 1 1 100%;
+    font-size: 14px;
+    text-align: center;
 }
 
 aside{
-    background-color: #d84368;
+    background-color: #d0d0d0;
     padding: 10px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
     flex: 1;
 }
 
-.publicidad{
-    background-color: #ffdb38;
+.publicidad-title{
     padding: 5px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
 }
 
+.publicidad-body{
+    padding: 5px;
+    text-align: center;
+    font-size: 16px;
+}
+
+
 footer{
-    background-color: #eddd77;
+    background-color: #efefef;
+    text-align: center;
+    font-size: 12px;
     padding: 10px;
 }
 
 @media (max-width: 900px){
-
     main{
         flex-direction: column;
     }
@@ -154,7 +206,6 @@ footer{
         flex: none;
         /* en este caso no aplica porque no hay una altura definida en en main y simplemente se apilan */
     }
-
 }
 
 @media (max-width: 400px){
@@ -165,9 +216,6 @@ footer{
         flex-direction: column;
         align-items: center;
     }
-
-
-
 }
 
 
